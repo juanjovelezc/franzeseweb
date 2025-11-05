@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { margin: 0; background: #0b1622; color: #e6eef6; font-family: 'Share Tech Mono', monospace; }
+.app-shell { display: flex; min-height: 100vh; }
+.sidebar { width: 280px; background: rgba(0,0,0,0.22); border-right: 1px solid #1f2a36; padding: 24px; }
+.sidebar a { color: #e6eef6; text-decoration: none; display: block; padding: 10px 12px; border-radius: 6px; }
+.sidebar a:hover { background: rgba(255,255,255,0.06); }
+.main { flex: 1; padding: 24px; }
+.paper { background: #f3ead6; color: #1f2937; border: 1px solid #d9cbb0; border-radius: 6px; padding: 16px; box-shadow: 0 8px 28px rgba(0,0,0,.35); }
+.seal { display:inline-block; padding:4px 8px; border-radius:3px; background: rgba(139,0,0,0.08); color:#8b0000; font-weight:700; font-size:12px; border:1px solid rgba(139,0,0,0.12); font-family: 'Special Elite', cursive; }
+.modal-bg { background: rgba(0,0,0,0.55); backdrop-filter: blur(3px); }
+.polaroid { background: linear-gradient(180deg,#fff,#fafafa); padding:8px; border-radius:6px; box-shadow:0 10px 30px rgba(0,0,0,0.45); }
