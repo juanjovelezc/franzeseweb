@@ -124,19 +124,24 @@ export default function Historia() {
             </div>
 
             {selected.thumb && (
-              <img
-                src={selected.thumb}
-                alt={selected.title}
-                style={{
-                  width: "100%",
-                  height: 240,
-                  objectFit: "cover",
-                  borderRadius: 8,
-                  cursor: "pointer",
-                  marginBottom: 16,
-                }}
-                onClick={() => setImageModal(selected.thumb)}
-              />
+              <div style={{ textAlign: "center", marginBottom: 16 }}>
+                <img
+                  src={selected.thumb}
+                  alt={selected.title}
+                  style={{
+                    width: "80%",
+                    maxWidth: 280,
+                    height: "auto",
+                    objectFit: "cover",
+                    borderRadius: 8,
+                    border: "1px solid #bbb",
+                    boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+                    cursor: "pointer",
+                    backgroundColor: "#f4f1ec",
+                  }}
+                  onClick={() => setImageModal(selected.thumb)}
+                />
+              </div>
             )}
 
             <p
