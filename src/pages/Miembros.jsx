@@ -18,7 +18,7 @@ export default function Miembros() {
         >
           {members.map((m) => (
             <div key={m.id} className="paper">
-              <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+             
               {m.photo && (
                 <img
                   src={m.photo}
@@ -49,7 +49,7 @@ export default function Miembros() {
                 </button>
               </div>
             </div>
-            </div>
+            
           ))}
         </div>
       )}
